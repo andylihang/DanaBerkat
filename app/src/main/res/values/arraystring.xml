@@ -1,0 +1,104 @@
+<resources>
+    <string-array name="sex_array">
+        <item>pria</item>
+        <item>wanita</item>
+    </string-array>
+    <string-array name="education_array">
+        <item>sekolah dasar</item>
+        <item>smp</item>
+        <item>sma</item>
+        <item>diploma</item>
+        <item>university</item>
+        <item>master</item>
+        <item>dokter</item>
+    </string-array>
+    <string-array name="job_array">
+        <item>karyawan swasta</item>
+        <item>wiraswasta</item>
+        <item>karyawan bumn</item>
+        <item>pegawai negeri sipil</item>
+        <item>mahasiswa/pelajar</item>
+        <item>TNI/Polisi</item>
+        <item>pensiunan</item>
+        <item>profesional/dokter/pengacara</item>
+        <item>ibu rt/penganguran</item>
+        <item>student</item>
+        <item>other</item>
+    </string-array>
+    <!--贷款目的 -->
+    <string-array name="goal_array">
+        <item>Pendidikan</item>
+        <item>Kesehatan</item>
+        <item>Pembayaran hutang</item>
+        <item>Undang tamu</item>
+        <item>Perjalanan</item>
+        <item>memulai usaha</item>
+        <item>hiburan</item>
+        <item>lain</item> <!-- 其他-->
+    </string-array>
+    <string-array name="goal_code_array">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <!-- 收入 -->
+    <string-array name="salary_array">
+        <item>0-2juta</item>
+        <item>2-4juta</item>
+        <item>4-6juta</item>
+        <item>6-8juta</item>
+        <item>8-10juta</item>
+        <item>10-12juta</item>
+        <item>12+juta</item>
+    </string-array>
+    <!--第一关系 -->
+    <string-array name="relation_one_array">
+        <item>orangtua</item>
+        <item>suami dan lstri</item>
+    </string-array>
+    <!-- 第二关系-->
+    <string-array name="relation_two_array">
+        <item>teman sekelas</item>
+        <item>teman</item>
+        <item>orangtua</item>
+        <item>suami dan lstri</item>
+    </string-array>
+    <string-array name="salary_day">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+</resources>

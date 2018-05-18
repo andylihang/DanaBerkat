@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="credit" />
+
+    <version value="9" />
+
+    <list>
+        <mapping class="com.cd.dnf.credit.bean.BorrowOrderBean" />
+        <mapping class="com.cd.dnf.credit.bean.BorrowOperateBean" />
+    </list>
+
+</litepal>

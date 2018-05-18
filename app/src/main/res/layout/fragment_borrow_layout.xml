@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/status_bar_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bg_borrow_title_bar" />
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/window_title_height"
+            android:background="@android:color/transparent">
+
+            <LinearLayout
+                android:id="@+id/notice_layout"
+                android:layout_width="@dimen/window_title_height"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="20dp"
+                    android:layout_height="20dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/icon_notify" />
+
+                    <ImageView
+                        android:id="@+id/point_view"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="right|top"
+                        android:layout_marginRight="3dp"
+                        android:visibility="gone"
+                        android:background="@drawable/red_point" />
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/widnow_title_size" />
+
+            <TextView
+                android:id="@+id/btn_replay_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:text="@string/reply_histiory_title_str"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/repay_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/window_title_height"
+            android:background="@android:color/transparent"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/repay_success_str"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/widnow_title_size" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="bank_same_mandiri_str">Mandiri 88608</string>
+    <string name="bank_same_mandiri_two_str">Mandiri 88908</string>
+    <string name="bank_same_bri_str">BRI</string>
+    <string name="bank_same_bni_str">BNI</string>
+    <string name="bank_different_mandiri">Mandiri</string>
+    <string name="bank_different_bri">BRI</string>
+    <string name="bank_different_bni">BNI</string>
+    <string name="bank_different_bca">BNI VAs from BCA</string>
+
+    <string name="bank_atm_str">at the ATM</string>
+    <string name="internet_bank_str">Using Internet Banking</string>
+
+    <string name="payment_guid_title_str">Payment guides</string>
+
+    <string name="bca_bank_str">Bank Central Asia (BCA)</string>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_take_photo"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/bg_take_photo_header">
+
+            <ImageView
+                android:id="@+id/card_tip_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                 />
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tipe_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:textColor="#36455E"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/need_photo_clear_tip_str"
+            android:textColor="#B6C1D3"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/btn_sure"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/bg_register"
+            android:gravity="center"
+            android:text="@string/take_photo_sure_str"
+            android:textColor="@color/white"
+            android:textSize="@dimen/btn_register_text_size" />
+
+
+    </LinearLayout>
+</LinearLayout>

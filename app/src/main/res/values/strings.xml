@@ -1,0 +1,284 @@
+<resources>
+    <string name="app_name">Pinjam Plus</string>
+    <string name="bottom_borrow_str">Pinjaman</string> <!--借贷 -->
+    <string name="bottom_mine_str">Milikku</string> <!-- 我的 -->
+    <string name="network_requesting">Mengirim permintaan, mohon tunggu</string><!-- 网络请求中 -->
+    <string name="network_error">Gagal terhubung ke internet</string> <!--连接网络失败-->
+    <string name="register_phone_input_tip">Silahkan masukkan no ponsel anda</string> <!--请输入您的手机号码-->
+    <string name="register_code_tip">Kode</string>
+    <string name="register_password_tip">Masukan Pasword</string><!--请输入密码-->
+    <string name="password_limit_tip_str">Password 4-10 digit, hanya angka dan huruf</string>
+    <string name="register_rule_str">Perwakilan yang terdaftar membaca dan menyetujui kesepakatan tersebut</string>
+    <string name="register_picture_code">Dapatkan Kode</string>
+    <string name="register_str">Sign Up</string>
+    <string name="login_pic_tip_str">Harap masukkan kode verifikasi gambar</string>
+    <string name="login_forget_pwd_str">Lupa kata sandi anda?</string>
+    <string name="login_str">Log in</string>
+    <string name="login_rule_str">Perwakilan terdaftar membaca dan setuju***Perjanjian</string>
+    <string name="kaptcha_title_str">kode verifikasi gambar</string>
+    <string name="sure_str">Baiklah</string>
+    <string name="cancel_str">Batal</string>
+    <string name="input_kaptcha_code_str">Harap masukkan kode verifikasi gambar</string> <!--请输入图片验证码 -->
+    <string name="input_ok_kaptcha_code_str">Harap masukkan kode verifikasi gambar yang benar</string> <!--请输入正确的图片验证码-->
+    <string name="forget_password_str">Retrieve Password</string>
+
+    <string name="borrow_title_str">Sejarah pelunasan</string>
+    <string name="reply_histiory_title_str">Sejarah pelunasan</string>
+    <string name="borrow_ing_desc_str">Jumlah Pengembalian</string>
+    <string name="money_unit">Rp</string>
+    <string name="borrow_limit_title">Jumlah Pinjaman</string>
+    <string name="borrow_money_600">Rp600.000</string>
+    <string name="borrow_money_1200">Rp1.200.000</string>
+    <string name="borrow_money_600_str">600000</string> <!--贷款额度的钱-->
+    <string name="borrow_money_1200_str">1200000</string><!--贷款额度的钱-->
+    <string name="borrow_day_title">Durasi</string>
+    <string name="borrow_day_7">7 Hari</string>
+    <string name="borrow_day_14">14 Hari</string>
+    <string name="borrow_day_7_str">7</string><!--贷款的天数-->
+    <string name="borrow_day_14_str">14</string><!--贷款的天数-->
+    <string name="borrow_str">Pinjam Sekarang</string>
+    <string name="borrow_tip_str">Audit tercepat 5 menit, pinjaman 20 menit</string>
+
+    <string name="borrow_step_one_title_str">Informasi Dasar</string>
+    <string name="borrow_step_one_str">Informasi\nDasar</string>
+    <string name="borrow_step_two_title_str">Informasi Tambahan</string>
+    <string name="borrow_step_two_str">Informasi\nTambahan</string>
+    <string name="borrow_step_three_title_str">Sertifikat</string>
+    <string name="borrow_step_three_str">Sertifikat\n</string>
+    <string name="borrow_step_four_title_str">Rekening Bank</string>  <!-- 第四步   Rekening Bank-->
+    <string name="borrow_step_four_str">Rekening\nBank</string>
+
+    <string name="person_info_title__str">Informasi Pribadi</string> <!-- 个人信息 -->
+    <string name="full_name_str">Nama Lengkap</string> <!--全名-->
+    <string name="sex_str">Jenis kelamin</string> <!--性别 -->
+    <string name="education_str">Pendidikan</string> <!--教育 -->
+    <string name="job_str">Pekerjaan</string> <!--工作 -->
+    <string name="nick_name_str">NIK</string> <!--小名 -->
+    <string name="address_str">Alamat tempat tinggal tetap</string> <!-- 永久居住地址-->
+    <string name="full_address_str">Alamat Lengkap</string> <!--完整的地址 -->
+    <string name="borrow_step_one_eg_str">eg: JI.H.Muhi rt *** rt** no.20 pondok pinang\nkebayoran lama jakarta selatan</string>
+    <string name="borrow_next_str">Berikutnya</string>
+
+    <string name="province_tip">Provinsi Hunian</string> <!--省的提示-->
+    <string name="city_tip">Kota Hunian</string> <!--市的提示-->
+    <string name="area_tip">kecamatan Hunian</string> <!--区的提示-->
+    <string name="choose_province_tip">Pilih provinsi</string> <!-- 请选择省 -->
+    <string name="choose_city_tip">Silahkan pilih kota</string> <!--请选择市 -->
+    <string name="choose_area_tip">Silahkan pilih area</string> <!--请选择区-->
+
+    <string name="identity_card_str">Foto KTP sisi depan</string><!--身份证证明照-->
+    <string name="handle_card_str">Foto wajah bersamaan dengan KTP di tangan</string><!--手持身份证照片-->
+    <string name="work_card_str">Kartu identitas perusahaan</string> <!--工牌照 制服-->
+    <string name="argic_wage_str">Slip gaji</string><!--工资条-->
+
+    <string name="borrow_goal_str">Pinjaman</string> <!--贷款目的 -->
+    <string name="borrow_goal_tip_str">Tujuan pinjaman</string> <!-- 选中贷款目的 -->
+    <string name="company_info_str">Informasi perusahaan</string> <!--公司信息 -->
+    <string name="company_name_tip_str">Nama Perushaan Anda</string> <!--公司名称 -->
+    <string name="company_phone_tip_str">Telepon perusahaan</string> <!-- 公司电话 -->
+    <string name="company_address_tip_str">Alamat Perusahaan</string> <!--公司地址 -->
+    <string name="month_income_tip_str">Gaji Bulanan</string> <!--月收入-->
+    <string name="saly_day_tip_str">Tanggal Gajian</string> <!--发薪日-->
+    <string name="relation_one_person">No Telpon Kerabat Dekat 1</string> <!--第一个联系人-->
+    <string name="relation_two_person">No Telpon Kerabat Dekat 2</string> <!--第二个联系人-->
+    <string name="relation_person_name_tip_str">Harap masukkan name kontak</string> <!--请输入联系人姓名-->
+    <string name="relation_person_phone_tip_str">Silahkan masukkan nomor telephone</string> <!--请输入联系人电话-->
+
+    <string name="bank_name_tip_str">Nama Bank</string> <!-- 选择银行 -->
+    <string name="bank_account_tip_str">Nomor Rekening Bank</string> <!--银行账户 -->
+    <string name="bank_user_name_tip_str">Nama lengkap pemegang rekening</string><!--开户人姓名-->
+    <string name="address_authorization_str">Otorisasi buku alamat</string> <!--地址授权-->
+    <string name="sms_authorization_str">Otorisasi SMS</string><!--短信授权-->
+    <string name="call_record_authorization_str">Otorisasi rekaman suara</string> <!--通话记录授权-->
+    <string name="authorizaiton_str">Sudah</string>
+    <string name="need_authorization_str">Tidak</string>
+    <string name="tax_tip">Informasi Pilihan</string>
+    <string name="tax_number_str">Silahkan mengisi nomor pajak</string> <!-- 税号 -->
+    
+    <string name="borrow_loan_virtual_account_str">Virtual Account</string>
+    <string name="pay_guid_str">Payment guides</string>
+    <string name="pay_guid_same_bank_tip">From the same Bank</string>
+    <string name="pay_guid_diffence_bank_tip">Use BCA Card in BNI ATM</string>
+    <string name="pay_guid_atm_tip">From the ATM</string>
+    <string name="pay_guid_internet_tip">From Internet Banking</string>
+    <string name="how_to_pay_str">How to pay&#160;</string>
+    <string name="go_borrow_str">Kembali ke beranda</string>
+    <string name="borrow_patch_str">Informasi tambahan</string>
+    <string name="borrow_patch_title_str">Suplemen</string>
+    <string name="borrow_patch_desc_str">Sedang ditinjau ulang,mohon bersabar</string>
+
+    <string name="bank_str">Bank</string>
+    <string name="bank_other_tip_str">Lainnya</string>
+    <string name="end_time_tip_str">membayar kembali uang pada tanggal:</string><!--到期时间 -->
+
+
+
+
+    <!-- 借款提示 -->
+    <string name="input_username_tip">Harap masukkan nama pengguna</string> <!--请输入用户名-->
+    <string name="choose_sex_tip">Silakan pilih jenis kelamin</string> <!--请选择一个性别 -->
+    <string name="choose_education_tip">silahkan pilih tingkat pendidikan</string> <!-- 请选择教育程度 -->
+    <string name="choose_job_tip">Silahkan pilih pekerjaan</string> <!--请选择工作-->
+    <string name="input_card_tip">Harap masukkan nomor ID</string> <!--请输入身份证号码 -->
+    <string name="input_right_card_tip">Harap masukkan nomor ID yang benar</string> <!--请输入正确的身份证号码 -->
+    <string name="choose_address_tip">Silahkan pilih alamat tempat tinggal permanen</string> <!--请选择一个永久居住地址-->
+    <string name="input_detail_address_tip">mohon masukan alamat dengan lengkap</string> <!--请输入详细地址 -->
+
+    <string name="input_goal_tip">Harap masukkan tujuan pinjaman</string> <!--请选择贷款目的地-->
+    <string name="input_company_name_tip">Harap masukkan nama perusahaan</string> <!--请输入公司名称-->
+    <string name="input_company_phone_tip">Harap masukkan telepon perusahaan</string> <!-- 请输入公司电话-->
+    <string name="input_company_address_tip">Harap masukkan alamat perusahaan</string> <!--请输入公司地址 -->
+    <string name="choose_salary_tip">Silakan pilih penghasilan bulanan</string> <!--请选择月收入 -->
+    <string name="choose_salary_day_tip">Pilih hari gajian</string> <!--选择发薪日 -->
+    <string name="choose_relation_one">Silahkan pilih kontak pertama</string> <!-- 请选择第一个联系人-->
+    <string name="choose_relation_one_people_name">Silahkan pilih nama kontak yang pertama</string> <!--请先选择一个联系人姓名 -->
+    <string name="choose_relation_one_people_phone">Harap pilih nomor kontak pertama</string> <!--请选择第一个联系人电话 -->
+    <string name="choose_relation_two">Silahkan pilih kontak kedua</string> <!--请选择第二个联系人 -->
+    <string name="choose_relation_two_people_name">Silakan pilih nama kontak kedua</string> <!--请选择第二个联系人姓名 -->
+    <string name="choose_relation_two_people_phone">Harap pilih nomor kontak kedua</string> <!--请选择第二个联系电话 -->
+    <string name="choose_same_relation_tip_str">Anda tidak bisa memilih hubungan yang sama</string> <!--不能选择相同的关系-->
+    <string name="choose_same_people_tip_str">Anda tidak dapat memilih kontak yang sama</string> <!--不能选择相同联系人-->
+
+    <string name="input_bank_accout_tip">Mohon masukan nomor rekening bank</string> <!--请输入银行卡号码-->
+    <string name="input_bank_open_account_name_tip">Harap masukkan nama akun Anda</string> <!-- 请输入开户名-->
+    <string name="input_right_account_user_name_tip">Harap masukkan nama akun yang benar</string> <!--请输入正确的开户名-->
+    <string name="choose_open_bank">Silahkan pilih bank</string> <!--请选择一家银行 -->
+    <string name="upload_contact_tip_str">Tolong sampaikan sertifikasi buku</string> <!-- 请进行通讯录认证-->
+    <string name="upload_call_tip_str">Silahkan hubungi sertifikasi rekaman</string> <!-- 请进行通话记录认证-->
+    <string name="upload_sms_tip_str">Silahkan upload otentikasi SMS</string> <!--请进行短信上传认证 -->
+
+    <string name="add_virtual_bank_str">Klik Add Repallment Account</string>
+
+
+    <string name="repay_success_str">Keberhasilan pelunasan</string>
+    <string name="repay_success_tip_str">Selamat,\nsukses pelunasan</string>
+    <string name="repay_borrow_tip_str">Terus pinjam uang bisa klik tombol di bawah ini, nantikan untuk melayani anda lagi</string>
+    <string name="borrow_again_str">Terus pinjaman</string>
+
+    <string name="borrow_audit_title_str">Auditing</string>
+    <string name="borrow_audit_desc_str">Sedang ditinjau ulang,mohon bersabar</string>
+    <string name="borrow_audit_fail_title_str">Audit gagal</string>
+    <string name="borrow_audit_fail_desc_str">Sedang ditinjau ulang,mohon bersabar</string>
+
+
+    <string name="borrow_apply_title_str">Aplikasi</string>
+    <string name="borrow_apply_desc_str">Menunggu persetujuan, mohon bersabar</string>
+
+    <string name="audit_step_one_str">Terapkan</string>
+    <string name="audit_step_two_str">Audit</string>
+    <string name="audit_step_three_str">Pinjaman</string>
+    <string name="audit_step_fail_str">Audit gagal</string>
+    <string name="loan_step_ing_str">Pinjaman di</string>
+
+    <string name="loan_step_ing_title_str">Pinjaman di</string>
+
+    <string name="borrow_loan_step_str">Pinjaman</string>
+    <string name="borrow_loan_fail_title_str">Pinjaman gagal</string>
+    <string name="borrow_loan_fail_desc_str">Sedang ditinjau ulang,mohon bersabar</string>
+
+    <string name="borrow_loan_over_time_str">Terlambat %sHari</string>
+
+    <string name="upload_indentify_card_tip_str">upload foto ktp halaman depan</string> <!--上传身份证正面照 -->
+    <string name="need_upload_indentify_card_tip_str">Gagal mengupload photo dengan id card, untuk kembali ke transmisi ulang langkah sebelumnya</string> <!--上传身份证正面照失败,返回上一步重传-->
+    <string name="upload_handle_card_tip_str">upload foto kartu identitas</string><!-- 上传手持身份证照片-->
+    <string name="need_upload_handle_card_tip_str">Gagal mengunggah foto kartu identitas, kembali ke transmisi ulang langkah sebelumnya</string><!--上传手持身份证照片失败,返回上一步重传-->
+    <string name="upload_work_card_tip_str">upload foto kartu identitas perusahaan </string><!--上传工牌照片-->
+    <string name="need_upload_work_card_tip_str">Gagal untuk mengupload poto kartu identitas perusahaan, kembali ke langkah sebelumnya untuk mentransmisikan ulang</string> <!-- 上传工牌照片失败,返回上一步重传-->
+    <string name="upload_article_card_tip_str">Upload foto slip gaji</string> <!--上传工资条照片 -->
+    <string name="need_upload_article_card_tip_str">Upload foto slip gaji gagal, kembali ke transmisi ulang langkah sebelumnya</string> <!--上传工资条照片失败,返回上一步重传 -->
+
+    <string name="borrow_history_item_tip">Terapkan jumiah</string>
+    <string name="borrow_status_0_str">dalam review</string>
+    <string name="borrow_status_1_str">Ditolak</string>
+    <string name="borrow_status_2_str">Pinjaman di</string>
+    <string name="borrow_status_3_str">Pembayaran</string>
+    <string name="borrow_status_4_str">Pinjaman gagal</string>
+    <string name="borrow_status_5_str">Pembayaran Terlambat</string>
+    <string name="borrow_status_6_str">Selesai</string>
+    <string name="borrow_status_7_str">Kirim kembali</string>
+    <!-- 退出程序 -->
+    <string name="exit_app_str">Anda yakin ingin berhenti？</string>
+    <!-- 个人中心 -->
+    <string name="person_center_str">Pusat pribadi</string>
+    <string name="mine_agreement_str">Perjanjian layanan platform</string>
+    <string name="mine_notice_center_str">Pusat Pesan</string>
+    <string name="mine_customer_service_str">Telepon layanan pelanggan</string>
+    <string name="about_us_str">Tentang kami</string>
+    <string name="mine_check_update">Deteksi pembaruan</string>
+    <string name="bind_bank_str">Rekening Bank</string> <!--绑定银行卡 -->
+    <string name="borrow_history_str">Catatan Pinjaman</string><!--借款历史-->
+    <string name="notification_record_str">Pesan saya</string><!--消息记录-->
+    <string name="add_bind_card_str">Tambahkan</string><!--添加银行卡 -->
+
+    <string name="login_out_str">Keluar</string> <!--退出登陆 -->
+
+    <!--验证提示信息-->
+    <string name="phone_empty_tip_str">Harap masukkan nomor teleponnya</string> <!--请输入电话号码 -->
+    <string name="input_right_phone_tip_str">Harap masukkan nomor telepon yang benar</string> <!--请输入正确的手机号-->
+    <string name="verify_code_empty_tip">Harap masukkan kode verifikasi SMS</string> <!--请输入短信验证码 -->
+    <string name="verify_code_error_tip">Harap masukkan kode verifikasi SMS yang benar</string> <!--请输入正确的短信验证码 -->
+    <string name="password_empty_tip_str">Harap masukkan kata sandinya</string> <!--请输入密码 -->
+    <string name="password_error_tip_str">Harap masukkan format kata sandi yang benar</string> <!-- 请输入正确的密码格式-->
+
+
+    <string name="no_new_version">Saat ini versi terbaru</string>
+    <string name="downloading">Download...</string>
+    <string name="new_version_msg">Temukan versi baru dan perbarui sekarang?</string>
+    <string name="update_now">Update sekarang</string>
+    <string name="cancel">Batal</string>
+
+    <string name="mine_go_to_login">Klik avatar login</string> <!-- 个人中心 点击头像登陆 -->
+
+    <string name="mine_add_bank_title_str">Tambahkan kartu bank</string> <!--新增银行卡-->
+    <string name="mine_modify_bank_title_str">Ubah kartu bank</string> <!-- 修改银行卡-->
+    <string name="save_str">Simpan</string> <!-- 保存 -->
+    <string name="edit_str">Edit</string> <!--编辑 -->
+    <string name="custom_call_str">Telepon:&#160;&#160;%1$s</string><!-- 客服电话 -->
+    <string name="btn_call_custom_str">Menelepon</string> <!--联系客服 -->
+
+    <string name="no_mine_bind_card_str">Belum menambahkan kartu bank~</string> <!--暂未添加银行卡 -->
+    
+    <string name="no_message_tip_str">Kamu belum punya berita~</string> <!--您暂时没有消息哦～-->
+
+    <string name="no_borrow_tip_str">Anda belum memiliki catatan peminjaman</string><!--您暂时没有借款记录哦～-->
+
+    <string name="no_loan_tip_str">Anda belum memiliki catatan pembayaran~</string> <!--您暂时没有还款记录哦～-->
+
+    <string name="count_down_left_time">Sisa(%ss)</string> <!--剩余多少秒-->
+
+    <string name="logout_title_str">Konfirmasi keluar dari akun saat ini?</string> <!-- 确认退出当前账号-->
+    <string name="ok_str">Baiklah</string> <!-- 确定 -->
+
+    <string name="fetch_contact_str">Dapatkan kontaknya</string> <!--获取联系人 -->
+    <string name="fetch_call_record_str">Dapatkan riwayat panggilan</string><!-- 获取通话记录 -->
+    <string name="fetch_sms_str">Dapatkan konten SMS</string> <!--fetch_sms_str -->
+    <string name="take_photo_sure_str">mulai</string>
+    <string name="need_photo_clear_tip_str">Foto harus jelas</string> <!--照片需要清晰-->
+
+
+    <string name="about_us_product_str">Produk</string> <!--产品介绍 -->
+    <string name="about_us_product_desc_str">Pinjam Plus adalah salah satu platform kredit tanpa jaminan pertama di Indonesia dimana pengguna dapat mengoperasikan sepenuhnya melalui app ponse</string>
+    <string name="about_us_special_str">Fitur</string> <!-- 产品介绍 -->
+    <string name="about_us_special_desc_str">1. Fitur Produk: Minimal meminjam 600.000 Rupiah, pelunasan 7/14 hari, biayanya rendah.\n
+2. Kredit Meminjam: Tidak ada hipotek, hanya 4 langkah, mudah didapat.\n
+3. Pinjaman tercepat: Segera audit, hari yang sama dapat pinjaman\n
+4. Pelayanan yang baik: Notifikasi pengingat pembayaran agar tepat waktu.</string>
+
+    <!--动态权限-->
+    <string name="permission_request_str">Tanpa izin, beri izin sekarang</string> <!--没有权限,现在申请权限 -->
+    <string name="need_permission_str">Perlu mengotorisasi aplikasi untuk masuk</string> <!--需要对应用进行授权才能进入 -->
+
+    <string name="cancel_title_str">Pembatalan</string> <!--取消-->
+    <string name="sure_title_str">Konfirmasi</string> <!--确认-->
+    <string name="reply_time_str">Tanggal jatuh tempo pembayaran</string>
+
+    <string name="login_register_title_str">Anda belum masuk</string>
+    <string name="go_to_login_str">Sudah punya akun,masuk sekarang</string> <!-- 已有账号，立即登录 -->
+    <string name="go_to_register_str">Tidak ada akun,daftar sekarang</string><!--没有账号，立即注册 -->
+    <string name="login_agree_title">Saya telah membaca dan menyetujui</string>
+    <string name="see_login_agree_str">《Ketentuan Layanan Pengguna》</string><!--点击查看协议-->
+    <string name="user_agree_title_str">Perjanjian privasi pengguna</string>
+    <string name="agree_user_agreement_tip_str">Harap setujui perjanjian privasi pengguna</string> <!--请同意用户隐私协议-->
+    <string name="wait_upload">Harap tunggu untuk mengunggah</string><!--请等待上传 -->
+
+</resources>

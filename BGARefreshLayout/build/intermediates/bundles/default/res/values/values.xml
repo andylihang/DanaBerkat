@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bga_refresh_loading_str">Loading...</string>
+    <string name="bga_refresh_pull_str">Tarik ke bawah refresh</string>
+    <string name="bga_refresh_release_str">Update rilis</string>
+</resources>

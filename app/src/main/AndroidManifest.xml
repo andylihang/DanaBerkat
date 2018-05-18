@@ -1,0 +1,218 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cd.dnf.credit">
+
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name ="android.permission.GET_TASKS" />
+
+    <!-- 阿里云推送相关权限 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name=".application.CreditApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/icon_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_logo"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon, android:theme, android:label,android:allowBackup">
+        <!--阿里推送-->
+
+       <!-- // 正式环境-->
+        <meta-data
+            android:name="com.alibaba.app.appkey"
+            android:value="24849250" /> <!-- 请填写你自己的- appKey 正式24800152 测试24803890 -->
+        <meta-data
+            android:name="com.alibaba.app.appsecret"
+            android:value="abeb573090dd4dc616abbbfdcf0013d7" /> <!--请填写你自己的appSecret 正式8102953980b73c7df8508edd2db9642e  测试e3a021a396b35bf460c0f2a6e5eeeefd -->
+
+<!--
+
+        // 测试环境
+        <meta-data
+            android:name="com.alibaba.app.appkey"
+            android:value="24803890" /> &lt;!&ndash; 请填写你自己的- appKey 正式24800152 测试24803890 &ndash;&gt;
+        <meta-data
+            android:name="com.alibaba.app.appsecret"
+            android:value="e3a021a396b35bf460c0f2a6e5eeeefd" /> &lt;!&ndash;请填写你自己的appSecret 正式8102953980b73c7df8508edd2db9642e  测试e3a021a396b35bf460c0f2a6e5eeeefd &ndash;&gt;
+-->
+
+
+
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash_style">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="yly" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/custom_credit_style">
+
+        </activity>
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/custom_credit_style">
+
+        </activity>
+        <activity
+            android:name=".activity.LoginRegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/custom_credit_style">
+
+        </activity>
+        <activity
+            android:name=".activity.ForgetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/custom_credit_style" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ui.borrow.actvitiy.BorrowOrderActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:configChanges="screenSize|keyboardHidden|orientation"
+            android:theme="@style/custom_credit_style">
+
+        </activity>
+        <activity
+            android:name=".ui.mine.activity.AgreementActvitiy"
+            android:screenOrientation="portrait"
+            android:theme="@style/custom_credit_style" />
+        <activity
+            android:name=".ui.mine.activity.NoticeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/custom_credit_style" />
+        <activity
+            android:name=".ui.mine.activity.CustomCallActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/custom_credit_style" />
+        <activity
+            android:name=".ui.mine.activity.AboutUsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/custom_credit_style" />
+        <activity
+            android:name=".ui.borrow.actvitiy.BankActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/custom_credit_style" />
+
+        <activity
+            android:name=".ui.mine.activity.BindCardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/custom_credit_style" />
+        <activity
+            android:name=".ui.mine.activity.AddBankCardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/custom_credit_style" />
+        <activity
+            android:name=".ui.mine.activity.LoanHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/custom_credit_style" />
+        <activity
+            android:name=".ui.mine.activity.ModifyBankCardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/custom_credit_style" />
+        <activity
+            android:name=".ui.mine.activity.BorrowHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/custom_credit_style" />
+        <activity
+            android:name=".activity.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/custom_credit_style" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+
+        <!-- 消息接收监听器 （用户可自主扩展） -->
+        <receiver
+            android:name=".receiver.AliPushReceiver"
+            android:exported="false">
+            <intent-filter> 
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_OPENED" />
+            </intent-filter>
+            <intent-filter>     
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_REMOVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.sdk.android.push.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".receiver.AliPushIntentService"
+            android:exported="false">
+            <intent-filter> 
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_OPENED" />
+            </intent-filter>
+            <intent-filter>     
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_REMOVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.sdk.android.push.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.talkingdata.sdk.TDAntiCheatingService"
+            android:process="com.talkingdata.sdk.TDAntiCheatingService">  <!--用户质量评估Service可以配置在主进程或者单独进程-->
+            <intent-filter>
+                <action android:name="com.talkingdata.sdk.TDAntiCheatingService" />
+            </intent-filter>
+        </service>
+        <meta-data android:name="TD_APP_ID" android:value="CA1C8749A2A54503A5C21880F429F75A" />
+        <meta-data android:name="TD_CHANNEL_ID" android:value="guanfang" />
+    </application>
+
+</manifest>

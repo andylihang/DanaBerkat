@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <include layout="@layout/step_three_banner_layout" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/bg_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/identify_card_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="180dp"
+                        android:layout_height="120dp">
+
+                        <ImageView
+                            android:id="@+id/identify_card_view"
+                            android:layout_width="180dp"
+                            android:layout_height="120dp"
+                            android:scaleType="centerCrop" />
+
+                        <com.cd.dnf.credit.view.RoundProgressBar
+                            android:id="@+id/identify_progress"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            app:max="100"
+                            app:roundColor="@color/round_color"
+                            app:roundProgressColor="@color/round_progress_color"
+                            app:roundWidth="3dp"
+                            app:textColor="@color/primaryColor"
+                            app:textIsDisplayable="true"
+                            app:textSize="14sp" />
+
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/identity_card_str"
+                        android:textColor="#36455E"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/handle_card_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="180dp"
+                        android:layout_height="120dp">
+
+                        <ImageView
+                            android:id="@+id/handle_card_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop" />
+
+                        <com.cd.dnf.credit.view.RoundProgressBar
+                            android:id="@+id/handle_progress"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            app:max="100"
+                            app:roundColor="@color/round_color"
+                            app:roundProgressColor="@color/round_progress_color"
+                            app:roundWidth="3dp"
+                            app:textColor="@color/primaryColor"
+                            app:textIsDisplayable="true"
+                            app:textSize="14sp" />
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/handle_card_str"
+                        android:textColor="#36455E"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/work_card_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="180dp"
+                        android:layout_height="120dp">
+
+                        <ImageView
+                            android:id="@+id/work_card_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop" />
+
+                        <com.cd.dnf.credit.view.RoundProgressBar
+                            android:id="@+id/work_progress"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            app:max="100"
+                            app:roundColor="@color/round_color"
+                            app:roundProgressColor="@color/round_progress_color"
+                            app:roundWidth="3dp"
+                            app:textColor="@color/primaryColor"
+                            app:textIsDisplayable="true"
+                            app:textSize="14sp" />
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/work_card_str"
+                        android:textColor="#36455E"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/artic_wage_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="180dp"
+                        android:layout_height="120dp">
+
+                        <ImageView
+                            android:id="@+id/artic_wage_view"
+                            android:layout_width="180dp"
+                            android:layout_height="120dp"
+                            android:scaleType="centerCrop" />
+
+                        <com.cd.dnf.credit.view.RoundProgressBar
+                            android:id="@+id/wage_progress"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            app:max="100"
+                            app:roundColor="@color/round_color"
+                            app:roundProgressColor="@color/round_progress_color"
+                            app:roundWidth="3dp"
+                            app:textColor="@color/primaryColor"
+                            app:textIsDisplayable="true"
+                            app:textSize="14sp" />
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/argic_wage_str"
+                        android:textColor="#36455E"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btn_next_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_register_height"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/bg_need_input"
+                    android:gravity="center"
+                    android:text="@string/borrow_next_str"
+                    android:textColor="@color/need_input_color"
+                    android:textSize="@dimen/btn_register_text_size" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "41289343787",
+    "firebase_url": "https://pinjam-plus-36bc2.firebaseio.com",
+    "project_id": "pinjam-plus-36bc2",
+    "storage_bucket": "pinjam-plus-36bc2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41289343787:android:bf9feea7f1e742c3",
+        "android_client_info": {
+          "package_name": "com.cd.pinjamplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41289343787-u0fk0cc3mdgtl5ad7i0sho4dc6q9v84d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWFsCLJuThf11MMvLNtha-zOchEn_Hop8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

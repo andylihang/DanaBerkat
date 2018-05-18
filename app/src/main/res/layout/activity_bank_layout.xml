@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/status_bar_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/bg_title_bar" />
+
+            <RelativeLayout
+                android:id="@+id/title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/window_title_height"
+                android:background="@android:color/transparent">
+
+                <LinearLayout
+                    android:id="@+id/back_layout"
+                    android:layout_width="@dimen/window_title_height"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_back_primary" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/bank_str"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/widnow_title_size" />
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.cd.dnf.credit.view.headerlistview.PinnedHeaderListView
+                android:id="@+id/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:background="#00FFFFFF"
+                android:cacheColorHint="#fff4f4f4"
+                android:divider="@color/divider_color"
+                android:dividerHeight="1px"
+                android:drawSelectorOnTop="false"
+                android:fadingEdgeLength="0.0dp"
+                android:scrollingCache="false"
+                android:smoothScrollbar="true" />
+
+            <com.cd.dnf.credit.view.headerlistview.BladeView
+                android:id="@+id/bladeview"
+                android:layout_width="30dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:background="#00000000"
+                android:paddingTop="10dp" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

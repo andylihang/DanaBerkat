@@ -1,0 +1,56 @@
+<resources>
+    <!--对应不同的错误码-->
+    <!--Admin-->
+    <string name="code_1100_str">Account atau password salah</string> <!-- 账号或密码错误 -->
+    <string name="code_1102_str">Kesalahan kode verifikasi</string> <!--验证码错误-->
+    <string name="code_1103_str">Pengguna telah dinonaktifkan</string> <!--用户已被禁用-->
+    <string name="code_1104_str">Username sudah ada</string> <!--用户名已存在-->
+    <string name="code_1105_str">Nama pengguna sudah ada</string> <!--角色名已存在-->
+
+    <!--Bank-->
+    <string name="code_1701_str">Nomor kartu bank bukan milik Anda</string> <!--银行卡号不属于你-->
+
+    <!--借款-->
+    <string name="code_1_str">Informasi yang anda masukan salah</string> <!-- 输入参数信息不正确-->
+    <string name="code_1201_str">Pengguna yang mengajukan pinjaman tidak lulus sertifikasi</string> <!--申请贷款的用户未通过认证-->
+    <string name="code_1202_str">Status persetujuan kosong</string> <!--审批状态为空-->
+    <string name="code_1203_str">Rekening bank tidak cocok</string> <!--银行账号不匹配-->
+    <string name="code_1204_str">Nama pelanggan tidak cocok</string> <!--客户姓名不匹配-->
+    <string name="code_1205_str">Rencana keuangan salah</string> <!--金融方案错误-->
+    <string name="code_1206_str">Sudah memiliki aplikasi pinjaman sebelumnya, tolong jangan ajukan pinjaman ulang</string> <!--已有借款申请,请勿重复提交-->
+    <string name="code_1207_str">Jangan mengulangi pengiriman jangka pendek</string> <!--短期内请勿重复提交-->
+    <string name="code_1211_str">Tidak ada aplikasi pinjaman</string> <!--没有借款申请单!-->
+    <string name="code_1212_str">Periode pelunasannya salah</string> <!--还款期数错误-->
+    <string name="code_1241_str">Tidak ada perintah pelunasan</string> <!--没有还款订单!-->
+
+    <!-- 订单 -->
+    <string name="code_1901_str">Order tidak ada</string> <!--订单不存在-->
+    <string name="code_1902_str">Pinjaman, mohon jangan ulangi pengajuan</string> <!--已放款,请勿重复提交-->
+    <string name="code_1903_str">Pesanan sedang diproses, tolong jangan diajukan ulang</string> <!--已有正在进行中的订单,请勿重复提交-->
+
+    <!--支付模块-->
+    <string name="code_1410_str">Permintaan informasi rekening bank pengguna gagal</string> <!--查询用户银行账户信息失败-->
+    <string name="code_1411_str">Xendit gagal membuat virtual account</string> <!--Xendit创建虚拟账户失败-->
+    <string name="code_1412_str">Pembayaran Xendit gagal</string> <!--Xendit支付失败-->
+    <string name="code_1413_str">Xendit callback order id error ( kesalahan permintaan pangilan id xendit)</string> <!--Xendit回调订单id出错-->
+    <string name="code_1414_str">kesalahan pembayaran virtual account xendit</string> <!--Xendit回调虚拟账户还款出错-->
+    <string name="code_1415_str">BluePay gagal membuat akun virtual</string> <!--BluePay创建虚拟账户失败-->
+    <string name="code_1421_str">Verifikasi pembayaran ulang MDPay MD5 gagal</string> <!--BluePay还款回调MD5校验失败-->
+    <string name="code_1422_str">BluePay callback order id error</string> <!--BluePay回调订单id出错-->
+    <string name="code_1423_str">Order callback BluePay telah tercatat</string> <!--BluePay回调订单已被记录-->
+    <string name="code_1450_str">Hanya mendukung jenis "pembayaran" </string> <!--只支持"还款"类型-->
+    <string name="code_1451_str">Hanya mendukung kenaikan bunga</string> <!--只支持"加息"类型-->
+
+    <!-- 用户-->
+    <string name="code_1010_str">Kesalahan tanda tangan pengguna JWT, silahkan cek tanda tangan JWT</string> <!--用户JWT签名错误，请检查JWT签名！-->
+    <string name="code_1012_str">Nomor telepon telah terdaftar</string> <!--手机号已经被注册-->
+    <string name="code_1013_str">Pengguna tidak terdaftar</string> <!--用户未注册-->
+    <string name="code_1014_str">Kesalahan kode verifikasi</string> <!--验证码错误-->
+    <string name="code_1015_str">Kata sandi salah</string> <!--密码错误-->
+    <string name="code_1016_str">Akun Anda terbatas untuk login, hubungi administrator</string> <!--你的账户被限制登录，请联系管理员-->
+    <string name="code_1017_str">Kode verifikasi gambar salah</string> <!--图片验证码错误-->
+    <string name="code_1018_str">SMS gagal dikirim</string> <!--短信发送失败 -->
+    <string name="code_1210_str">Gagal meninjau, mohon terapkan lagi setelah 30 hari</string> <!--审核失败,请30天后再次申请 -->
+    <string name="code_other_str">Tidak ada respon dari server Silakan coba lagi</string> <!--服务器无反应请稍后在试-->
+    <string name="code_day_try_str">Gagal meninjau, mohon terapkan lagi setelah %1$s hari</string>
+</resources>

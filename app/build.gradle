@@ -1,0 +1,86 @@
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.android.application'
+
+android {
+    //com.cd.dnf.credit
+    compileSdkVersion 26
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.cd.pinjamplus"
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 13
+        versionName "1.0.9"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        sign {
+            keyAlias 'china'
+            keyPassword 'credit100'
+            storeFile file('../credit.jks')
+            storePassword 'credit100'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.sign
+        }
+        debug {
+            signingConfig signingConfigs.sign
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    android {
+        lintOptions {
+            abortOnError false
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.lzy.net:okgo:3.0.4'
+    compile 'com.alibaba:fastjson:1.2.41'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'me.imid.swipebacklayout.lib:library:1.0.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.jaeger.statusbarutil:library:1.4.0'
+    compile 'org.litepal.android:core:1.6.1'
+    compile 'pub.devrel:easypermissions:0.3.0'
+    //动态权限框架
+    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    compile files('libs/eventbus-3.0.0.jar')
+    compile 'com.aliyun.dpa:oss-android-sdk:2.8.0'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.squareup.okio:okio:1.9.0'
+    compile 'com.aliyun.ams:alicloud-android-push:3.0.11@aar'
+    compile 'com.aliyun.ams:alicloud-android-utdid:1.1.5.3'
+    compile 'com.aliyun.ams:alicloud-android-ut:5.0.0'
+    compile 'com.aliyun.ams:alicloud-android-third-push:3.0.3@aar'
+    compile project(':BGARefreshLayout')
+    compile 'me.drakeet.materialdialog:library:1.3.1'
+    compile 'com.google.firebase:firebase-core:11.8.0'
+    compile files('libs/SaaS_AppAnalytics_Android_SDK_V4.0.17.jar')
+}

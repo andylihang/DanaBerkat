@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/touch_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/step_two_banner_layout" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@color/bg_color" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="6dp"
+                                android:layout_height="20dp"
+                                android:background="@mipmap/bg_info_tip" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:text="@string/borrow_goal_str"
+                                android:textColor="#36455E"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#E6E6E6" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/goal_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/borrow_input_height"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/goal_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:hint="@string/borrow_goal_tip_str"
+                                    android:singleLine="true"
+                                    android:textColor="@color/borrow_input_color"
+                                    android:textColorHint="@color/borrow_input_hint_color"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:background="@mipmap/icon_choose_next" />
+
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/primaryColor" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="6dp"
+                                android:layout_height="20dp"
+                                android:background="@mipmap/bg_info_tip" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:text="@string/company_info_str"
+                                android:textColor="#36455E"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#E6E6E6" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/company_name_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/borrow_input_height"
+                                    android:layout_gravity="center"
+                                    android:background="@null"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:hint="@string/company_name_tip_str"
+                                    android:singleLine="true"
+                                    android:textColor="@color/borrow_input_color"
+                                    android:textColorHint="@color/borrow_input_hint_color"
+                                    android:textSize="14sp" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#E6E6E6" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/company_phone_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/borrow_input_height"
+                                    android:layout_gravity="center"
+                                    android:background="@null"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:hint="@string/company_phone_tip_str"
+                                    android:singleLine="true"
+                                    android:phoneNumber="true"
+                                    android:maxLength="20"
+                                    android:textColor="@color/borrow_input_color"
+                                    android:textColorHint="@color/borrow_input_hint_color"
+                                    android:textSize="14sp" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#E6E6E6" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/company_address_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/borrow_input_height"
+                                    android:layout_gravity="center"
+                                    android:background="@null"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:hint="@string/company_address_tip_str"
+                                    android:singleLine="true"
+                                    android:textColor="@color/borrow_input_color"
+                                    android:textColorHint="@color/borrow_input_hint_color"
+                                    android:textSize="14sp" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#E6E6E6" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/month_income_layout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/borrow_input_height"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/month_income_view"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:background="@null"
+                                        android:ellipsize="end"
+                                        android:gravity="center_vertical"
+                                        android:hint="@string/month_income_tip_str"
+                                        android:singleLine="true"
+                                        android:textColor="@color/borrow_input_color"
+                                        android:textColorHint="@color/borrow_input_hint_color"
+                                        android:textSize="14sp" />
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:background="@mipmap/icon_choose_next" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#E6E6E6" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/saly_day_layout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/borrow_input_height"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/saly_day_view"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:background="@null"
+                                        android:ellipsize="end"
+                                        android:gravity="center_vertical"
+                                        android:hint="@string/saly_day_tip_str"
+                                        android:singleLine="true"
+                                        android:textColor="@color/borrow_input_color"
+                                        android:textColorHint="@color/borrow_input_hint_color"
+                                        android:textSize="14sp" />
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:background="@mipmap/icon_choose_next" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#E6E6E6" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="6dp"
+                                android:layout_height="20dp"
+                                android:background="@mipmap/bg_info_tip" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:text="@string/relation_one_person"
+                                android:textColor="#36455E"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#E6E6E6" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/relation_one_layout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/borrow_input_height"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/relation_one_view"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:background="@null"
+                                        android:ellipsize="end"
+                                        android:gravity="center_vertical"
+                                        android:hint="@string/relation_one_person"
+                                        android:singleLine="true"
+                                        android:textColor="@color/borrow_input_color"
+                                        android:textColorHint="@color/borrow_input_hint_color"
+                                        android:textSize="14sp" />
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:background="@mipmap/icon_choose_next" />
+                                </LinearLayout>
+
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#E6E6E6" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/one_person_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/borrow_input_height"
+                                    android:layout_gravity="center"
+                                    android:background="@null"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:hint="@string/relation_person_name_tip_str"
+                                    android:singleLine="true"
+                                    android:textColor="@color/borrow_input_color"
+                                    android:textColorHint="@color/borrow_input_hint_color"
+                                    android:textSize="14sp" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#E6E6E6" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/one_person_phone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/borrow_input_height"
+                                    android:layout_gravity="center"
+                                    android:background="@null"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:hint="@string/relation_person_phone_tip_str"
+                                    android:singleLine="true"
+                                    android:textColor="@color/borrow_input_color"
+                                    android:textColorHint="@color/borrow_input_hint_color"
+                                    android:textSize="14sp" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#E6E6E6" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="6dp"
+                                android:layout_height="20dp"
+                                android:background="@mipmap/bg_info_tip" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:text="@string/relation_two_person"
+                                android:textColor="#36455E"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#E6E6E6" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/relation_two_layout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/borrow_input_height"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/relation_two_view"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:background="@null"
+                                        android:ellipsize="end"
+                                        android:gravity="center_vertical"
+                                        android:hint="@string/relation_two_person"
+                                        android:singleLine="true"
+                                        android:textColor="@color/borrow_input_color"
+                                        android:textColorHint="@color/borrow_input_hint_color"
+                                        android:textSize="14sp" />
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:background="@mipmap/icon_choose_next" />
+                                </LinearLayout>
+
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#E6E6E6" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/two_person_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/borrow_input_height"
+                                    android:layout_gravity="center"
+                                    android:background="@null"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:hint="@string/relation_person_name_tip_str"
+                                    android:singleLine="true"
+                                    android:textColor="@color/borrow_input_color"
+                                    android:textColorHint="@color/borrow_input_hint_color"
+                                    android:textSize="14sp" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#E6E6E6" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/two_person_phone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/borrow_input_height"
+                                    android:layout_gravity="center"
+                                    android:background="@null"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:hint="@string/relation_person_phone_tip_str"
+                                    android:singleLine="true"
+                                    android:textColor="@color/borrow_input_color"
+                                    android:textColorHint="@color/borrow_input_hint_color"
+                                    android:textSize="14sp" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#E6E6E6" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/btn_next"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/btn_register_height"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@mipmap/bg_register"
+                        android:gravity="center"
+                        android:text="@string/borrow_next_str"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/btn_register_text_size" />
+                </LinearLayout>
+            </FrameLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

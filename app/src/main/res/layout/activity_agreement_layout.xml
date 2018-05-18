@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/status_bar_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bg_title_bar"
+            />
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/window_title_height"
+            android:background="@android:color/transparent">
+
+            <LinearLayout
+                android:id="@+id/back_layout"
+                android:layout_width="@dimen/window_title_height"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_back_primary" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/mine_agreement_str"
+                android:textColor="@color/title_color"
+
+                android:textSize="@dimen/widnow_title_size" />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="《平台协议当当单》"
+                android:layout_gravity="center_horizontal"
+                android:textSize="12sp"
+                android:textColor="#9fa6b2"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="12sp"
+                android:textColor="#9fa6b2"
+                android:text="     信用钱包优惠券按照使用条件分为借款优惠券和白条商城优惠券。\n
+      借款优惠券包括：服务费折扣券、现金贷还款券、免息券等；\n
+      2.1）服务费折扣券适用于现金贷还款，当您的还款期数符合优惠券的优惠期数且在还款时优惠券仍在有效期内，则当期服务费可享受对应折扣。\n
+      2.2）现金贷还款券适用于现金贷还款，当您的还款期数符合优惠券的优惠期数且在还款时优惠券仍在有效期内，则当期还款服务费可免除对应抵扣金额（注：若优惠券面值大于等于当期服务费，则当期收取服务费金额为0）。\n
+      2.3）免息券适用于现金贷还款，当您的还款期数符合优惠券的优惠期数且在还款时优惠券仍在有效期内，则当期利息免除。(注：应还借款金额=本金+利息+服务费)
+白条商城优惠券包括：满减券等；\n
+      2.4）满减券适用于购买白条商城指定品类的商品，订单金额满足满减条件时可使用。（注：全品类优惠券适用全部品类）"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
